@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Die With a Smile</title>
+    <style>
+        body{
+            font-size: 20px;
+            text-align: center;
+        }
+        .highlight{
+            background-color: yellowgreen;
+        }
+        button{
+            background-color: rgb(34, 34, 158);
+            border: 1px solid rgb(20, 20, 112);
+            color: white;
+            padding: 20px 34px;
+            cursor: pointer;
+            font-size: 19px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button onclick = "HighlightSection('verse1')">Verse 1</button>
+        <button onclick = "HighlightSection('prechorus')">Pre Chorus</button>
+        <button onclick = "HighlightSection('chorus')">Chorus</button>
+        <button onclick = "HighlightSection('verse2')">Verse 2</button>
+        <button onclick = "HighlightSection('prechorus2')">Pre Chorus 2</button>
+        <button onclick = "HighlightSection('chorus2')">Chorus 2</button>
+        <button onclick = "HighlightSection('bridge')">Bridge</button>
+        <button onclick = "HighlightSection('chorus3')">Chorus 3</button>
+    </div>
+    <h1 style = "font-size: 60px">Die with a smile</h1>
+    <div id = "verse1">
+        <pre>
+            I, I just woke up from a dream
+
+            Where you and I had to say goodbye
+
+            And I don't know what it all means
+
+            But since I survived, I realized
+        </pre>
+        <br>
+    </div>
+    <div id = "prechorus">
+        <pre>
+            Wherever you go, that's where I'll follow
+
+            Nobody's promised tomorrow
+
+            So I'ma love you every night like it's the last night
+
+            Like it's the last night    
+        </pre>
+        <br>
+    </div>
+    <div id = "chorus">
+        <pre>
+            If the world was ending
+
+            I'd wanna be next to you
+
+            If the party was over
+
+            And our time on Earth was through
+
+            I'd wanna hold you just for a while
+
+            And die with a smile
+
+            If the world was ending
+
+            I'd wanna be next to you
+        </pre>
+        <br>
+    </div>
+    <div id = "verse2">
+        <pre>
+            Ooh, lost, lost in the words that we scream
+
+            I don't even wanna do this anymore
+
+            'Cause you already know what you mean to me
+
+            And our love's the only war worth fighting for
+        </pre>
+        <br>
+    </div>
+    <div id = "prechorus2">
+        <pre>
+            Wherever you go, that's where I'll follow
+            Nobody's promised tomorrow
+            So I'ma love you every night like it's the last night
+            Like it's the last night
+        </pre>
+        <br>
+    </div>
+    <div id = "chorus2">
+        <pre>
+            If the world was ending
+            I'd wanna be next to you
+            If the party was over
+            And our time on Earth was through
+            I'd wanna hold you just for a while
+            And die with a smile
+            If the world was ending
+            I'd wanna be next to you
+        </pre>
+        <br>
+    </div>
+    <div id = "bridge">
+        <pre>
+            Right next to you
+            Next to you
+            Right next to you
+            Oh-oh
+        </pre>
+        <br>
+    </div>
+    <div id = "chorus3">
+        <pre>
+            If the world was ending
+            I'd wanna be next to you
+            If the party was over
+            And our time on Earth was through
+            I'd wanna hold you just for a while
+            And die with a smile
+            If the world was ending
+            I'd wanna be next to you
+            If the world was ending
+            I'd wanna be next to you
+        </pre>
+        <br>
+    </div>
+
+    <script>
+        function HighlightSection(id) {
+            document.querySelectorAll('div').forEach(div => div.classList.remove('highlight'));
+
+            document.getElementById(id).scrollIntoView();
+
+            document.getElementById(id).classList.add('highlight');
+        }
+    </script>
+
+</body>
+</html>
